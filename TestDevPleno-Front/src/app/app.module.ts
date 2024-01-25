@@ -30,12 +30,14 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
 import { AuthInterceptorProvider } from './interceptor/auth-interceptor.interceptor';
+import { HomeDeleteComponent } from './components/home-delete/home-delete.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    HomeDeleteComponent
   ],
   imports: [
     BrowserModule,

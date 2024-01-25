@@ -25,41 +25,16 @@
           <ng-container matColumnDef="musicas">
             <th mat-header-cell *matHeaderCellDef> Musicas </th>
             <td mat-cell *matCellDef="let element"> 
-              <a routerLink="delete/{{ element.nome }}">
+              <a routerLink="/{{ element.nome }}">
                 <i class="material-icons songs ">library_music</i>
               </a>
             </td>
           </ng-container>
-  
-          <!-- <ng-container matColumnDef="titulo">
-            <th mat-header-cell *matHeaderCellDef> Título </th>
-            <td mat-cell *matCellDef="let element"> {{ element.musicas[0].titulo }} </td>
-          </ng-container>
-  
-          <ng-container matColumnDef="artista">
-            <th mat-header-cell *matHeaderCellDef> Artista </th>
-            <td mat-cell *matCellDef="let element"> {{ element.musicas[0].artista }} </td>
-          </ng-container>
-  
-          <ng-container matColumnDef="album">
-            <th mat-header-cell *matHeaderCellDef> Album </th>
-            <td mat-cell *matCellDef="let element"> {{ element.musicas[0].album }} </td>
-          </ng-container>
-  
-          <ng-container matColumnDef="ano">
-            <th mat-header-cell *matHeaderCellDef> Ano </th>
-            <td mat-cell *matCellDef="let element"> {{ element.musicas[0].ano }} </td>
-          </ng-container>
-  
-          <ng-container matColumnDef="genero">
-            <th mat-header-cell *matHeaderCellDef> Genero </th>
-            <td mat-cell *matCellDef="let element"> {{ element.musicas[0].genero }} </td>
-          </ng-container> -->
-  
+
           <ng-container matColumnDef="acoes">
             <th mat-header-cell *matHeaderCellDef> Ações </th>
             <td mat-cell *matCellDef="let element"> 
-              <a routerLink="delete/{{ element.nome }}">
+              <a routerLink="lists/{{ element.nome }}">
                 <i class="material-icons delete">delete</i>
               </a>
             </td>

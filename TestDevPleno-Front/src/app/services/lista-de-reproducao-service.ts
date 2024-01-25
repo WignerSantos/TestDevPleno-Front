@@ -24,6 +24,7 @@ export class ListaDeReproducaoService {
   }
 
   delete(listName: string): Observable<ListaDeReproducao> {
+    console.log(listName);
     return this.http.delete<ListaDeReproducao>(`${API_CONFIG.baseUrl}/lists/${listName}`);
   }
 
