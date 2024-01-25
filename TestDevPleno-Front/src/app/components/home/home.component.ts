@@ -14,7 +14,6 @@ export class HomeComponent {
 
   ELEMENT_DATA: ListaDeReproducao[] = []
 
-  // displayedColumns: string[] = ['titulo', 'artista', 'album', 'ano', 'genero', 'acoes'];
   displayedColumns: string[] = ['nome', 'descricao', 'musicas', 'acoes'];
   dataSource = new MatTableDataSource<ListaDeReproducao>(this.ELEMENT_DATA);
   

@@ -3,5 +3,5 @@ export interface Musicas {
     artista: string,
     album: string,
     ano: string,
-    genero: string,
+    genero: string
 }

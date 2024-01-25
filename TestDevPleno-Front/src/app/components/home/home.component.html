@@ -25,7 +25,7 @@
           <ng-container matColumnDef="musicas">
             <th mat-header-cell *matHeaderCellDef> Musicas </th>
             <td mat-cell *matCellDef="let element"> 
-              <a routerLink="/{{ element.nome }}">
+              <a routerLink="find/{{ element.nome }}">
                 <i class="material-icons songs ">library_music</i>
               </a>
             </td>
@@ -34,16 +34,16 @@
           <ng-container matColumnDef="acoes">
             <th mat-header-cell *matHeaderCellDef> Ações </th>
             <td mat-cell *matCellDef="let element"> 
-              <a routerLink="lists/{{ element.nome }}">
+              <a routerLink="delete/{{ element.nome }}">
                 <i class="material-icons delete">delete</i>
               </a>
             </td>
           </ng-container>
-      
+
           <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
           <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
         </table>
-      
+
         <mat-paginator [pageSizeOptions]="[2, 5, 10, 20]"
                         showFirstLastButtons
                         aria-label="Select page of periodic elements">

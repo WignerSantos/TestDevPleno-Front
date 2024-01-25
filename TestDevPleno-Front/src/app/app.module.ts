@@ -17,27 +17,26 @@ import { HttpClientModule, HttpContext } from '@angular/common/http';
 // Components imports from Angular Material
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatPaginatorModule } from '@angular/material/paginator';
-import { MatSnackBarModule } from '@angular/material/snack-bar';
-import { MatCheckboxModule } from '@angular/material/checkbox';
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatButtonModule } from '@angular/material/button';
-import { MatSelectModule } from '@angular/material/select';
+import { MatListModule } from '@angular/material/list';
 import { MatTableModule } from '@angular/material/table';
-import { MatRadioModule } from '@angular/material/radio';
 import { MatInputModule } from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
-import { MatListModule } from '@angular/material/list';
-import { MatCardModule } from '@angular/material/card';
 import { AuthInterceptorProvider } from './interceptor/auth-interceptor.interceptor';
+
+// Home Component
 import { HomeDeleteComponent } from './components/home-delete/home-delete.component';
+import { HomeListOneComponent } from './components/home-list-one/home-list-one.component';
+import { HomeCreateComponent } from './components/home-create/home-create.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    HomeDeleteComponent
+    HomeDeleteComponent,
+    HomeListOneComponent,
+    HomeCreateComponent
   ],
   imports: [
     BrowserModule,
@@ -52,17 +51,10 @@ import { HomeDeleteComponent } from './components/home-delete/home-delete.compon
     MatButtonModule,
     MatFormFieldModule,
     MatPaginatorModule,
-    MatSnackBarModule,
-    MatCheckboxModule,
-    MatToolbarModule,
-    MatSidenavModule,
-    MatSelectModule,
     MatTableModule,
-    MatRadioModule,
     MatInputModule,
-    MatIconModule,
     MatListModule,
-    MatCardModule,
+    MatIconModule,
     ToastrModule.forRoot({
       timeOut: 4000,
       closeButton: true,
